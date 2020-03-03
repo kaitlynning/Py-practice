@@ -7,7 +7,6 @@ animals.append('guinea pig')
 #updated animals list
 print('Updated animals list:', animals)
 
-
 '''
-list append()
+Updated animals list: ['cat', 'dog', 'rabbit', 'guinea pig']
 '''
