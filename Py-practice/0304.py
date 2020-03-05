@@ -13,5 +13,4 @@ print('Updated animals list:', animals)
 
 '''
 Updated animals list: ['cat', 'dog', 'rabbit', ['elephant', 'monkey', 'tiger']]
-Delete [wild_animals]
 ''' 
