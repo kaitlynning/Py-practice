@@ -21,16 +21,4 @@ print('New Language List: ', language)
 Language List:  ['Chinese', 'English', 'Japanese', 'Cantonese', 'Korean']
 New Language List:  ['Chinese', 'English', 'Japanese', 'Cantonese', 'Korean', 'French', 'German', 'Spanish']
 
-Difference between append and extend:
-x = [1, 2, 3]
-x.append([4, 5])
-print(x)
-
-ans:[1, 2, 3, [4, 5]]
-
-x = [1, 2, 3]
-x.extend([4, 5])
-print(x)
-
-ans:[1, 2, 3, 4, 5]
 '''
