@@ -8,8 +8,7 @@ class Solution:
             else:
                 ans += romanMap[s[i]]
         return ans
-        
-        print(ans)
+      
 
 '''
 Leetcode-Easy
