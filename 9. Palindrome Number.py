@@ -9,6 +9,7 @@ class Solution:
         else:
             return False
 
+        
 '''
 Leetcode-Easy
 9. Palindrome Number
