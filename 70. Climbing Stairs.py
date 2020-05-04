@@ -6,6 +6,7 @@ class Solution:
         #4:5
         #5:8
         previous, current = 0, 1
+        #n從1開始放
         for i in range(n):
             previous, current = current, previous + current
         return current    
