@@ -8,13 +8,13 @@ class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         point1 = headA
         point2 = headB
-        
+      #if a & b have different len, then we will stop the loop after second iteration  
         while point1 != point2:
             if not point1:
                 point1 = headB
             else:
                 point1 = point1.next
-                
+      #for the end of first iteration, we just reset the pointer to the head of another linkedlist         
             if not point2:
                 point2 = headA
             else:
@@ -26,4 +26,6 @@ Leetcode-Easy
 160. Intersection of Two Linked Lists
 Runtime: 172 ms, faster than 60.25%
 
+ don't care about the "value" of difference, we just want to make sure two pointers reach the intersection node at the same time.
+ 
 '''
