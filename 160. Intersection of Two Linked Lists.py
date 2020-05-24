@@ -11,8 +11,6 @@ class Solution:
       #if a & b have different len, then we will stop the loop after second iteration  
         while point1 != point2:
             #循環條件 直到p1不等於p2 就一直去做循環了
-        while point1 != point2:
-        while point1 != point2:
             if not point1:
                 point1 = headB
             else:
