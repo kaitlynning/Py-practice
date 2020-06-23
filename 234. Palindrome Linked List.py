@@ -1,30 +1,37 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
 #         self.val = val
-#         self.left = left
-#         self.right = right
+#         self.next = next
 class Solution:
-    def kthSmallest(self, root: TreeNode, k: int) -> int:
-        array = []
-        
-        def inorder(node):
-            if not node:
-                return
+    def isPalindrome(self, head: ListNode) -> bool:
+        fast = slow = ListNode(0)
+        fast = slow = head
+        stack = []
+        #split in half from the middle
+        while fast and fast.next:
+            stack.append(slow.val)
+            slow = slow.next
+            #two times faster 
+            fast = fast.next.next
             
-            inorder(node.left)
-            array.append(node.val)
-            inorder(node.right)
+        if fast:
+            slow = slow.next
         
-        inorder(root)  
-        
-        return array[k-1]
-        
+        while slow:
+            top = stack.pop()
+            
+            if top != slow.val:
+                return False
+            slow = slow.next
+        return True
+            
+            
         
 '''
 Leetcode-Easy
-230. Kth Smallest Element in a BST
-Runtime: 48 ms, faster than 90.65%
+234. Palindrome Linked List
+Runtime: 68 ms, faster than 85.46%
 
 
 
